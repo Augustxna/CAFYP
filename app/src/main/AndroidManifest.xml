@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cafyp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CAFYP">
+        <activity android:name=".AdminMainViewMember.MainAdminViewRelatedPayment" />
+        <activity android:name=".AdminMainViewMember.MainAdminViewRelatedHeirs" />
+        <activity android:name=".AdminMainViewMember.MainAdminUpdateUserData" />
+        <activity android:name=".AdminMainViewMember.MainAdminRelatedPaymentControl" />
+        <activity android:name=".AdminMainViewMember.MainAdminAllMemberControl" />
+        <activity android:name=".PaymentMainAdmin.MainAdminPaymentUpdate" />
+        <activity android:name=".PaymentMainAdmin.MainAdminPaymentControl" />
+        <activity android:name=".PaymentMainAdmin.MainAdminViewPayment" />
+        <activity android:name=".PaymentMainAdmin.MainAdminPaymentDashboard" />
+        <activity android:name=".PaymentMainAdmin.MainAdminCreatePayment" />
+        <activity android:name=".Common.LoginSignUp.SIgnUpOTP" />
+        <activity android:name=".User.ViewRelatedAdmin" />
+        <activity android:name=".Admin.UpdateUserData" />
+        <activity android:name=".Common.LoginSignUp.ForgotPasswordByphoneno" />
+        <activity android:name=".AdminMain.Reportread" />
+        <activity android:name=".AdminMain.Allpaymentlist" />
+        <activity android:name=".AdminMain.ViewAllMembers" />
+        <activity android:name=".Admin.AdminProfile" />
+        <activity android:name=".message.RelatedMemberChatList" />
+        <activity android:name=".message.MessageActivity2nd" />
+        <activity android:name=".Admin.RelatedPaymentControl" />
+        <activity android:name=".Admin.ViewRelatedPayment" />
+        <activity android:name=".Admin.ViewRelatedHeirs" />
+        <activity android:name=".Admin.RelatedMemberControl" />
+        <activity android:name=".Admin.RelatedMemberView" />
+        <activity android:name=".AdminMain.AdminControlUpdate" />
+        <activity android:name=".AdminMain.MainAdminProfile" />
+        <activity android:name=".User.Heirs.HeirControlBoard" />
+        <activity android:name=".PaymentAdmin.PaymentUpdate" />
+        <activity android:name=".Admin.NewRegisterCheckBoard" />
+        <activity android:name=".Admin.NewRegistrationBoard" />
+        <activity android:name=".PaymentMember.ReviewReceipt" />
+        <activity android:name=".PaymentMember.UploadReceipt" />
+        <activity android:name=".PaymentMember.CheckoutActivityJava" />
+        <activity android:name=".PaymentMember.CheckOutPage" />
+        <activity android:name=".PaymentMember.MemberViewPayment" />
+        <activity android:name=".PaymentMember.MemberPaymentControl" />
+        <activity android:name=".PaymentAdmin.PaymentControl" />
+        <activity android:name=".PaymentAdmin.ViewPayment" />
+        <activity android:name=".PaymentAdmin.PaymentDashboard" />
+        <activity android:name=".PaymentAdmin.CreatePayment" />
+        <activity android:name=".message.MessageActivity" />
+        <activity android:name=".AdminMain.AdminControl" />
+        <activity android:name=".AdminMain.ViewAdminBoard" />
+        <activity android:name=".AdminMain.CreateAdminForm" />
+        <activity android:name=".AdminMain.CreateAndViewAdmin" />
+        <activity android:name=".Admin.AdminLogin" />
+        <activity android:name=".AdminMain.MainAdminDashBoard" />
+        <activity android:name=".Admin.AdminDashDoard" />
+        <activity android:name=".User.Heirs.AddHeirs" />
+        <activity android:name=".User.Heirs.user_heirs" />
+        <activity android:name=".User.user_profile" />
+        <activity android:name=".User.UserDashBoard" />
+        <activity android:name=".Common.LoginSignUp.ForgetPasswordSuccessMessage" />
+        <activity android:name=".Common.LoginSignUp.SetNewPassword" />
+        <activity android:name=".Common.LoginSignUp.ChooseOne" />
+        <activity android:name=".Common.LoginSignUp.ForgotPassword" />
+        <activity android:name=".Common.LoginSignUp.VerifyPhoneOTP" />
+        <activity android:name=".Common.LoginSignUp.Signup3nd" />
+        <activity android:name=".Common.LoginSignUp.Signup2nd" />
+        <activity android:name=".Common.LoginSignUp.Signup" />
+        <activity android:name=".Common.LoginSignUp.Login" />
+        <activity android:name=".Common.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_k0WKlPshbLZUdJ" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

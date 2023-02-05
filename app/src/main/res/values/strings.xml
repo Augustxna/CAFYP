@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">CAFYP</string>
+    <string name="wel_name">WELCOME TO</string>
+
+
+    <string name="login">Login</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="create_account">Create Account</string>
+
+
+    <string name="registration">Registration</string>
+    <string name="enter_ic">Enter Identity Card Number</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_phone">Enter Phone Number</string>
+    <string name="enter_district">Enter District</string>
+    <string name="enter_state">Enter State</string>
+    <string name="enter_address">Enter Address</string>
+
+    <string name="front_page_heading">Welcome to e-khairat apps</string>
+    <string name="front_page_tag">Simple Apps change your life~</string>
+    <string name="front_page_login">LOGIN</string>
+    <string name="front_page_register">REGISTER</string>
+    <string name="front_page_aboutus">About Us</string>
+
+    <string name="remember_me">Remember Me</string>
+
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="identity_number">NRIC</string>
+    <string name="Current_Address">Current Address</string>
+    <string name="Postcode">Postcode</string>
+    <string name="state">State</string>
+    <string name="Password">Password</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="phone">Phone Number</string>
+    <string name="next">Next</string>
+
+    <string name="Gender">Gender</string>
+    <string name="verify">verify</string>
+
+    <string name="otp_code">Phone</string>
+    <string name="otp_verification">Verification</string>
+    <string name="otp_verify">Verify Code</string>
+    <string name="otp_description">Enter one time password sent on your phone number</string>
+
+    <string name="forget_password_detail">Please enter your email for reset your password.</string>
+    <string name="forget_password_detail2">Please enter your phone number for reset your password.</string>
+
+    <string name="choose">choose one</string>
+    <string name="choose_detail">Select one method that you want to use for reset password</string>
+    <string name="viasms">via SMS</string>
+    <string name="vismail">via mail</string>
+
+    <string name="new_credentials_detial">Your identity has been verified, here you can set your new password</string>
+    <string name="new_credentials">New Credentials</string>
+
+    <string name="password_updated">Password Updated</string>
+    <string name="password_updated_message">Your password has been updated, please press the login button and back to the login page</string>
+
+    <string name="logout">Logout</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="username">Name</string>
+    <string name="phonenumber">PhoneNo</string>
+    <string name="profile">profile</string>
+    <string name="heirs">heirs</string>
+    <string name="payment">payment</string>
+
+
+    <string name="myprofile">MyProfile</string>
+
+    <string name="admin">admin</string>
+    <string name="member">member</string>
+    <string name="setpayment">payment</string>
+
+    <string-array name="adminstate">
+        <item>ADMIN</item>
+        <item>MAINADMIN</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp"
+    tools:context=".User.user_profile">
+
+    <LinearLayout
+        android:id="@+id/userProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@drawable/back_icon"
+            android:layout_weight="0.15"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"/>
+
+            <LinearLayout
+                android:layout_weight="0.15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_page_icon" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/myprofile"
+            android:fontFamily="@font/muli_black"
+            android:textColor="@color/blue2"
+            android:textSize="30sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/lightWhite">
+
+                <TextView
+                    android:id="@+id/profile_phoneno_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:background="@color/white"
+                    android:textColor="@color/blue4"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/user_profile_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_phoneno_name"
+                    android:text="example"
+                    android:gravity="end"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/lightWhite"/>
+
+                <TextView
+                    android:id="@+id/profile_phoneno_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_below="@+id/user_profile_edit_name"
+                    android:background="@color/white"
+                    android:textColor="@color/blue4"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/user_profile_edit_phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_phoneno_text"
+                    android:text="example"
+                    android:gravity="end"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/lightWhite"/>
+
+
+                <TextView
+                    android:id="@+id/profile_invicode_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invitation Code"
+                    android:layout_below="@+id/user_profile_edit_phoneno"
+                    android:background="@color/white"
+                    android:textColor="@color/blue4"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/user_profile_edit_invitationcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="example"
+                    android:layout_below="@+id/profile_invicode_text"
+                    android:gravity="end"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/lightWhite"/>
+
+                <TextView
+                    android:id="@+id/relatedadmin_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Related Admin (Click to view detail)"
+                    android:layout_below="@+id/user_profile_edit_invitationcode"
+                    android:background="@color/white"
+                    android:textColor="@color/blue4"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/user_profile_edit_adminno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="example"
+                    android:layout_below="@+id/relatedadmin_text"
+                    android:gravity="end"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@color/lightWhite"/>
+
+                <Button
+                    android:id="@+id/view_related_admin_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/user_profile_edit_invitationcode"
+                    android:background="@color/transparent"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_profile_edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            app:hintTextColor="@color/blue4"
+            android:textColorHint="@color/blue4"
+            android:paddingBottom="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:textSize="15sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_profile_edit_nric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NRIC"
+            app:hintTextColor="@color/blue4"
+            android:textColorHint="@color/blue4"
+            android:paddingBottom="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:textSize="15sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_profile_edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            app:hintTextColor="@color/blue4"
+            android:textColorHint="@color/blue4"
+            android:paddingBottom="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:textSize="15sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_profile_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:hintTextColor="@color/blue4"
+            android:textColorHint="@color/blue4"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/blue2"
+            android:paddingBottom="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:textSize="15sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_profile_edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birth"
+            app:hintTextColor="@color/blue4"
+            android:textColorHint="@color/blue4"
+            android:paddingBottom="10dp">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:textSize="15sp"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:onClick="UpdateUserProfileData"
+            android:fontFamily="@font/muli_black"
+            android:background="@color/lightblue"
+            android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

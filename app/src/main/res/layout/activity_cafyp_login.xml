@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp"
+    android:transitionName="transition_login"
+    tools:context=".Common.LoginSignUp.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/login_back_button"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="40dp"
+                android:onClick="BacktoMain"
+                android:padding="5dp"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/GoAdminLogin"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:onClick="ToAdminLoginPage"
+                android:text="ADMIN"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/muli_black"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/blue2"
+            android:textSize="40sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/login_country_code_picker"
+                app:ccp_defaultPhoneCode="60"
+                app:ccp_defaultNameCode="MY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_border"
+                app:ccp_arrowColor="@color/blue4"
+                app:ccp_contentColor="@color/blue4"
+                app:ccp_flagBorderColor="@color/blue2"
+                app:ccpDialog_backgroundColor="@color/lightblue"
+                android:padding="5dp"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="true" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_phone_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_country_code_picker"
+                android:hint="@string/phone"
+                android:textColorHint="@color/blue4"
+                app:boxStrokeColor="@color/blue4"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/blue2"
+                app:hintTextColor="@color/blue4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/member_loginphoneno_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_phone_number"
+                android:hint="@string/enter_password"
+                android:textColorHint="@color/blue4"
+                app:boxStrokeColor="@color/blue4"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/blue2"
+                app:hintTextColor="@color/blue4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/member_loginpassword_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/muli"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/forget_password_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password"
+                android:layout_marginTop="10dp">
+
+
+                <Button
+                    android:id="@+id/forgotpassword_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/blue2"/>
+
+                <CheckBox
+                    android:id="@+id/rememberme_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                    android:text="@string/remember_me"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/blue2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blue2"/>
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/user_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forget_password_block"
+                android:layout_marginTop="20dp"
+                android:background="@color/lightblue"
+                android:onClick="loginToUserDashBoard"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/login_create_account_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_login_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:onClick="callSignupScreen"
+                android:text="Sign Up with New Account"
+                android:textColor="@color/blue2"/>
+
+            <RelativeLayout
+                android:id="@+id/login_progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/whitec_circle"
+                android:elevation="8dp"
+                android:padding="20dp"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

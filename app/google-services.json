@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "362320429153",
+    "project_id": "cafyp-ba8c1",
+    "storage_bucket": "cafyp-ba8c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362320429153:android:a2fd8445e4c8689fb7aa20",
+        "android_client_info": {
+          "package_name": "com.example.cafyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362320429153-el519k0qs9mqbchjqmvnftiv2scnvktq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGXEHuxzyxpTdYtlD-mI4bNzMJI3mICdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362320429153-el519k0qs9mqbchjqmvnftiv2scnvktq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminMain.AdminControl"
+    android:padding="30dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/back_icon"
+                    android:layout_weight="0.1"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"/>
+
+                <LinearLayout
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/home_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_page_icon" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Information"
+            android:textSize="40sp"
+            android:textColor="@color/blue2"
+            android:fontFamily="@font/muli_black"
+            android:layout_marginBottom="60dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_username"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_name"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IC"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_ic"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_email"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PhoneNo"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_phoneno"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/admin_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightWhite"
+                    android:gravity="right"
+                    android:text="chitan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_state"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InvitationCode"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_invitationcode"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+
+            <TableRow android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CreateDate"
+                    android:fontFamily="@font/muli_black"
+                    android:textColor="@color/blue4"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:background="@color/lightWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_createdate"
+                    android:text="chitan"
+                    android:gravity="right"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/admincontrol_update_button"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="update"
+                android:layout_margin="10dp"
+                android:background="@color/lightblue"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="exmaple"
+            android:fontFamily="@font/muli_black"
+            android:textStyle="bold"
+            android:id="@+id/relatedheir_name"
+            android:textSize="17sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="980000010000"
+            android:fontFamily="@font/muli_black"
+            android:textStyle="bold"
+            android:id="@+id/relatedheir_ic"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="example@gmail.com"
+            android:fontFamily="@font/muli_black"
+            android:textStyle="bold"
+            android:id="@+id/relatedheir_email"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+60123456789"
+            android:fontFamily="@font/muli_black"
+            android:textStyle="bold"
+            android:id="@+id/relatedheir_phone"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="anak"
+            android:fontFamily="@font/muli_black"
+            android:textStyle="bold"
+            android:id="@+id/relatedheir_relationship"
+            android:textSize="17sp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/blue4"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
